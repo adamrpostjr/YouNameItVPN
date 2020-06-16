@@ -1,0 +1,22 @@
+{
+  "name": "younameitvpn",
+  "version": "1.0.0",
+  "description": "A Brandable WireGuard Web Interface ",
+  "main": "index.js",
+  "scripts": {
+    "test": "N/A"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamrpostjr/YouNameItVPN.git"
+  },
+  "keywords": [
+    "comingsoon"
+  ],
+  "author": "Adam Post",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/adamrpostjr/YouNameItVPN/issues"
+  },
+  "homepage": "https://github.com/adamrpostjr/YouNameItVPN#readme"
+}
