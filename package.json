@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/adamrpostjr/YouNameItVPN/issues"
   },
-  "homepage": "https://github.com/adamrpostjr/YouNameItVPN#readme"
+  "homepage": "https://github.com/adamrpostjr/YouNameItVPN#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
