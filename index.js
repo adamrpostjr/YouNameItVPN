@@ -4,6 +4,7 @@ var younameitvpn = express();
 
 
 younameitvpn.use(express.static('public'));
+younameitvpn.use('/pages', express.static(__dirname + '/public/pages'));
 younameitvpn.use('/css', express.static(__dirname + '/public/css'));
 younameitvpn.use('/js', express.static(__dirname + '/public/js'));
 younameitvpn.use('/images', express.static(__dirname + '/public/images'));
@@ -13,5 +14,5 @@ var server = younameitvpn.listen(8080, function(){
     console.log("Server started at http://localhost:%s", port);
 });
 younameitvpn.get("/", (req, res) => {
-   res.sendFile(__dirname + '/index.html');
+   res.sendFile(__dirname + '/public/pages/dashboard.html');
 });

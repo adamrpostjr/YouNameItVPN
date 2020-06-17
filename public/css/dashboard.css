@@ -1,0 +1,50 @@
+html, body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+body{
+  background-color: #232323;
+  color: green;
+  font-size: 20px;
+}
+.row{
+  margin: unset;
+}
+.head{
+  background: black;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #787878;
+  margin-bottom: 35px;
+}
+.logo-title, .navi{
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0 25px;
+}
+footer{
+  background: black;
+  margin-top:35px;
+  height: 50px;
+  border-top: 2px solid #787878;
+  text-align: center;
+}
+
+
+
+.selected, .configs, .create{
+  background: black;
+  border: 1px solid white;
+  border-radius: 20px;
+  margin: 10px 0;
+  box-shadow: 12px 10px 20px 2px black;
+}
+.selected{
+  min-height: 400px;
+}
+.configs{
+  min-height: 400px;
+}
