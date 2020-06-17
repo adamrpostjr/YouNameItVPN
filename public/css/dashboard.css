@@ -25,6 +25,9 @@ body{
   flex-direction: column;
   padding: 0 25px;
 }
+.navi{
+  text-transform: uppercase;
+}
 footer{
   background: black;
   margin-top:35px;

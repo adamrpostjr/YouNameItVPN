@@ -14,5 +14,5 @@ var server = younameitvpn.listen(8080, function(){
     console.log("Server started at http://localhost:%s", port);
 });
 younameitvpn.get("/", (req, res) => {
-   res.sendFile(__dirname + '/public/pages/dashboard.html');
+   res.sendFile(__dirname + '/public/pages/index.html');
 });
