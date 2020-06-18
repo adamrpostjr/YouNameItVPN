@@ -40,7 +40,7 @@ footer{
 
 .selected, .configs, .create{
   background: black;
-  border: 1px solid white;
+  border: 1px solid #787878;
   border-radius: 20px;
   margin: 10px 0;
   box-shadow: 12px 10px 20px 2px black;
