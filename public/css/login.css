@@ -41,3 +41,6 @@ width: 96%;
 background-color:#787878;
 height: 1px;
 }
+input{
+  float:right;
+}
