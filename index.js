@@ -13,14 +13,3 @@ const server = younameitvpn.listen(8080, function(){
 const login = __dirname + '/public/pages/index.html'
 const dashboard = __dirname + '/public/pages/dashboard.html'
 const admin = __dirname + '/public/pages/admin.html'
-
-
-// // login
-// younameitvpn.get("/", (req, res) => {
-//   res.sendFile(login)
-// });
-// // Dashboard
-// younameitvpn.get("/dashboard", (req, res) => {
-//   // res.render(dashboard, { freeMem : fmem });
-//   res.sendFile(dashboard);
-// });
