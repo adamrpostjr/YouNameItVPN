@@ -8,7 +8,31 @@ on user creation we do two things,
 1. create and store the key in the database
 2. create and store env / config in a directory that the database will point to as well.
 
+Databases | Tables  --- Selling Setup
+1. Admin Table
+  1a. username
+  1b. password
+  1c. config 1 location
+  1d. config 2 location
+  1e. config 3 location
+  1f. config 4 location
+2. User Table
+  2a. login key
+  2b. payment date
+  2c. expiration
 
+Database | Tables  --- Site to Site Setup
+1. Admin Table
+  1a. username
+  1b. password
+  1c. config 1
+  1d. config 2
+2. User Table
+  2a. First Name
+  2b. Last Name
+  2c. Email
+  2d. Position
+  2e. config location
 
 --- More Technial Ideas ---
 // If env does not exist \\
@@ -20,9 +44,13 @@ on user creation we do two things,
 3. We should during the first run probably ask the user what they want are going to use it for
   3a. Selling VPN
   3b. Site to Site
-4. Need to come up with to se
+4. Need to come up with separate Management screen depending on what the user is going to do sell / site to Site
+  4a. maybe just hide the payment area and not allow others to Login
+  4b. we need separate js files for site to site or selling
 
 
+** when users create a login key we need to hash before sending and storing in the database, we should never send anything not hashed
+  This includes all variables sent back to the server as well. everything should be hashed and unhashed **
 
 --- Screens ---
 - First run
@@ -34,3 +62,4 @@ on user creation we do two things,
 - Every other time
   1. Login / create screen
   2. Management dashboard
+  3. Payment Page
