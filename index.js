@@ -3,10 +3,11 @@ const dotenv = require('dotenv').config();
 const mysql = require('mysql');
 const fs = require('fs');
 const ejs = require('ejs');
+const bodyParser = require('body-parser');
 
 const younameitvpn = express();
 younameitvpn.set('view-engine', 'ejs');
-younameitvpn.use(express.urlencoded({ extended: false }))
+younameitvpn.use(bodyParser.urlencoded({ extended: true }))
 younameitvpn.use(express.static('public'));
 
 const server = younameitvpn.listen(8080, function(){
@@ -33,6 +34,23 @@ if (process.env.setup_complete === '1') {
 } else {
   console.log('Setup init');
   younameitvpn.get('/', (req, res) => {
-    res.render(__dirname + '/public/setupindex.ejs')
+    res.render(__dirname + '/public/setupindex.ejs', {step: 0})
+  })
+  younameitvpn.post('/setupDB', (req, res) => {
+    console.log(req.body.dbHost);
+    // TODO: if logic to test the database connection
+    res.render(__dirname + '/public/setupindex.ejs', {step: 1})
+  })
+  younameitvpn.post('/setupCreds', (req, res) => {
+
+    res.render(__dirname + '/public/setupindex.ejs', {step: 2})
+  })
+  younameitvpn.post('/setupType', (req, res) => {
+
+    res.render(__dirname + '/public/setupindex.ejs', {step: 3})
+  })
+  younameitvpn.post('/setupCreds', (req, res) => {
+
+    //end setup process and return good info
   })
 }
