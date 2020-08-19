@@ -1,0 +1,102 @@
+body, html{
+  background: black;
+  min-height: 100%;
+  height: -webkit-fill-available;
+  margin: 0;
+  color: white;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.popup{
+  background: rgba(0, 178, 210);
+  color: black;
+  font-weight: bold;
+  width: 35%;
+  padding: 25px 30px;
+  position: absolute;
+  right: 50%;
+  top: 25px;
+  transform: translate(50%);
+  text-align: justify;
+  text-align-last: center;
+  border-radius: 23px;
+}
+.popup span.active{
+  display: block;
+}
+.popup span{
+  display: none;
+}
+.body, decoded{
+  color: white;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+}
+.decoded, .encoded{
+  width: 33.33%;
+  margin: unset;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.body{
+  width: 33.33%;
+  margin: unset;
+  text-align: center;
+  min-height: 300px;
+}
+.body div{
+  width: 100%;
+  height: 50px;
+}
+.body label{
+  float: left;
+  margin: 0 0 0 50px;
+}
+.body input, .body #click{
+  float: right;
+  margin: 0 50px 0 0;
+  background: linear-gradient(90deg, black, white, white, black);
+  border: unset;
+  padding: 0 10px;
+  font-weight: bolder;
+  font-size: 15px;
+  text-align: center;
+  width: 240px;
+}
+.body input:focus{
+  outline: unset
+}
+.selected{
+  background: linear-gradient(90deg, white, black, black, white)!important;
+  color: black!important;
+}
+.hiddenRadio{
+  display: none;
+}
+.setupForm.activeFrom{
+  display: block!important;
+}
+.setupForm{
+  display: none;
+}
+button{
+  background: black;
+  color: white;
+  border: 2px solid;
+  padding: 5px 49px;
+  font-size: 30px;
+  font-weight: bolder;
+  position: absolute;
+  right: 9%;
+  bottom: 7%;
+}

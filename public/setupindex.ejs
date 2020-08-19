@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title id="tName">YouNameItVPN | Setup</title>
+    <link rel="stylesheet" href="/css/setup.css">
+  </head>
+  <body>
+    <div class="popup">
+      <span class="popups active">Lets get everything setup, the first step is setting up the database, if you have not set it up already please take a moment and do that now.</span>
+      <span class="popups">Secondly, you have to setup the admin user for general maintance of the server.</span>
+      <span class="popups">Next, how will you be using your server?</span>
+      <span class="popups">Lastly, What will you call your new setup?</span>
+    </div>
+    <div class="row">
+      <div class="decoded">
+        <!-- TODO: put this into an array server side and serve it -->
+        <marquee behavior="scroll" direction="right" scrollamount="82">https://booking.com https://apple.com https://linkedin.com https://facebook.com https://digiteka.com https://twitter.com https://bing.com https://tradedesk.com https://amazon.com https://microsoft.com https://pornhub.com</marquee>
+        <br><marquee behavior="scroll" direction="right" scrollamount="78">https://google.com https://wayfair.com https://adriver.com https://yahoo.comhttps://booking.com https://apple.com https://linkedin.com https://ownpage.com</marquee>
+        <br><marquee behavior="scroll" direction="right" scrollamount="63">https://booking.com https://apple.com https://linkedin.com https://facebook.com https://tradedesk.com https://amazon.com https://microsoft.com https://pornhub.com</marquee>
+        <br><marquee behavior="scroll" direction="right" scrollamount="50">https://netflix.com https://zendesk.com https://tradedesk.com https://amazon.com https://microsoft.com https://pornhub.com https://crosspixel.com https:/gfycat.com</marquee>
+        <br><marquee behavior="scroll" direction="right" scrollamount="57">https://booking.com https://apple.com https://linkedin.com https://facebook.com https://digiteka.com https://twitter.com https://bing.com https://ownpage.com</marquee>
+      </div>
+      <div class="body">
+        <h1><span id="VPNName">YouNameItVPN</span> Setup</h1>
+        <form class="setupForm" action="index.html" method="post">
+          <div><label>DB host:</label>  <input onmouseover="mouseStatus()" type="text"></div>
+          <div><label>DB Name:</label>  <input type="text"></div>
+          <div><label>DB Username:</label>  <input type="text"></div>
+          <div><label>DB Password:</label>  <input type="text"></div>
+          <button type="button" id="next" name="dbNext">Next</button>
+        </form>
+        <form class="setupForm" action="indeUsernamex.html" method="post">
+          <div><label for="">Admin Username:</label>  <input type="text"></div>
+          <div><label for="">Admin Password:</label>  <input type="text"></div>
+          <button type="button" id="next" name="upNext">Next</button>
+        </form>
+        <form class="setupForm" action="indeUsernamex.html" method="post">
+          <div><label for="">Site 2 Site?</label> <label class="sslabel" id='click' for="site2site">.</label></div>
+          <div><label for="">For Sale?</label>  <label class="sslabel" id='click' for="sales">.</label> </div>
+          <button type="button" id="next" name="tpNext">Next</button>
+          <div class="hiddenRadio">
+            <input type="checkbox" id="site2site">
+            <input type="checkbox" id="sales">
+          </div>
+        </form>
+        <form class="setupForm" action="indeUsernamex.html" method="post">
+          <div><label>YouNameIt:</label>  <input id="name" type="text" maxlength = "20"></div>
+          <div><label>Logo Upload:</label>  <input type="text"></div>
+          <button type="button" id="submit" name="setup">Submit</button>
+        </form>
+      </div>
+      <div class="encoded">
+        <!-- TODO: on the fly hasing server side and pass it as a variable -->
+        <marquee behavior="scroll" direction="right" scrollamount="82">Flkka0MNi2RlbLq+tRKHWvWeImV3AOtoKSi1MJArXui6VqK95noRKYdCw7SV2+O8P0v+5sc24HauQSwIuSHyKqMFrAzNU7GdnQFcXV8j15srtRLTSNwINMMiJUOwUQuHo8gSydXEi5+JhLKV4FZzBNTGsvmufhP7V+LWETfC2iFRQH4TQ+0kDpGBzarF4EIBKBnPrioMtVE6Cdfyw9Lh/OuUJhuBgbjOqG3m0e3PIivawd9ltiNViw1TtSkdEC9g4Plg+ogbmCm+bwaqGXavBCCNn/fyM5/f5XP8</marquee>
+        <br><marquee behavior="scroll" direction="right" scrollamount="78">fhc9nD3YI0uKAp+MXdaRrQmYQQ6KaIONyU6hz+NBS/gK6qcfhy1PdKiFdcXbMV1uDGdZroW/6rQqxyj2yqBO61aPX0Z8ReoPZoVdqCHYvkLL0zvDYgX/QjSLVyM118+Eqr+HKceH8EiZzoIRflJMkD9Rq488GUtH6Ne/c7pEHhMYUnM0SYl7MyzY5CQxh6EW30eRsVftBm2ysA==</marquee>
+        <br><marquee behavior="scroll" direction="right" scrollamount="63">E+VnFi6WpKrnjCl3bWQIDzIidPDRk3iFrHXjagvzSE9lo0vdVwgMhWkq0ueHBA1byMrjt7RsW9/TZmAZ/Lws3IwtY8ahQcXEdBr84IAS5yLJ6nXt8yw2+qTueIIgyxh6xtuLvNdIfSEgnOsNWWPZ3rUHfiz6ApWE/OkUzMjC7CEdzHJSvtnygKuWJevg/JN7lTqpK8J/UrwB8mT16cKLPc3D</marquee>
+        <br><marquee behavior="scroll" direction="right" scrollamount="50">WigkTpJaptqs0cxtkilVQqfHFi6tnfgnpEZ2KhLWO70T1MagiEFHwqG+35wFWYDi9gwVIa2EQz/n3p45oZawzQZjjOaiDQs4h10W3KF/TXekGdzu72B3EDDCHfo2/YHsOkFORoK0K+C8CTwaOt8h6qynUsA0FINY7hrUF0uw/fyab1um8mSJ2YToHggobLXPefT2KDSeuOfwDqEsbnkfaCPV2Q==</marquee>
+        <br><marquee behavior="scroll" direction="right" scrollamount="57">bC+AZLXG2ltuMXU387Eo41dc8ss84deEJqDfpD5m+Lqvor0k+jRvw20phEzNryb3AwS4MN+xvGqG8HQKJd5LWrcFva/u5cjTMugfrvILnR+pLsoww+M7oMdyETATc5er3G/VJLOVkyMb00cdkkmHbMwFsv0QuHW8Mpj0Vxi3xkrZpQI1LDXqcxOq7C/7IC31UMExOmzwiXeOmHRNVA==</marquee>
+      </div>
+    </div>
+    <div id="test" style="background: green; width: fit-content; height: fit-content; position: absolute">
+        test
+    </div>
+  </body>
+  <script type="text/javascript">
+    function mouseStatus() {
+      onmousemove = function(e){
+        //console.log("mouse location:", e.clientX, e.clientY)
+        document.getElementById('test').style.left = e.clientX+20+'px'
+        document.getElementById('test').style.top = e.clientY-40+'px'
+      }
+    }
+    </script>
+  <script type="text/javascript" src="/js/setupCS.js"></script>
+</html>
