@@ -38,19 +38,26 @@ if (process.env.setup_complete === '1') {
   })
   younameitvpn.post('/setupDB', (req, res) => {
     console.log(req.body.dbHost);
+    console.log(req.body.dbName);
+    console.log(req.body.dbUser);
+    console.log(req.body.dbPass);
     // TODO: if logic to test the database connection
     res.render(__dirname + '/public/setupindex.ejs', {step: 1})
+    //res.send(step = 1)
   })
-  younameitvpn.post('/setupCreds', (req, res) => {
-
+  younameitvpn.post('/setupAuth', (req, res) => {
+    console.log(req.body.user);
+    console.log(req.body.pass);
     res.render(__dirname + '/public/setupindex.ejs', {step: 2})
   })
   younameitvpn.post('/setupType', (req, res) => {
-
+    console.log(req.body.s2s);
+    console.log(req.body.sls);
     res.render(__dirname + '/public/setupindex.ejs', {step: 3})
   })
-  younameitvpn.post('/setupCreds', (req, res) => {
-
+  younameitvpn.post('/setupBrand', (req, res) => {
+    console.log(req.body.name);
+    console.log(req.body.logo);
     //end setup process and return good info
   })
 }

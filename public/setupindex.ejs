@@ -28,30 +28,33 @@
         <h1><span id="VPNName">YouNameItVPN</span> Setup</h1>
         <form class="setupForm" action="/setupDB" method="post">
           <div><label>DB host:</label>  <input name="dbHost" type="text"></div>
-          <div><label>DB Name:</label>  <input type="text"></div>
-          <div><label>DB Username:</label>  <input type="text"></div>
-          <div><label>DB Password:</label>  <input type="text"></div>
+          <div><label>DB Name:</label>  <input name="dbName" type="text"></div>
+          <div><label>DB Username:</label>  <input name="dbUser" type="text"></div>
+          <div><label>DB Password:</label>  <input name="dbPass" type="text"></div>
           <input type="submit" name="dbNext" id="next" value="Next">
           <!-- <button type="button" type="submit" id="next" name="dbNext">Next</button> -->
         </form>
-        <form class="setupForm" action="/setupCreds" method="post">
-          <div><label for="">Admin Username:</label>  <input type="text"></div>
-          <div><label for="">Admin Password:</label>  <input type="text"></div>
-          <button type="button" type="submit" id="next" name="upNext">Next</button>
+        <form class="setupForm" action="/setupAuth" method="post">
+          <div><label for="">Admin Username:</label>  <input name="user" type="text"></div>
+          <div><label for="">Admin Password:</label>  <input name="pass" type="text"></div>
+          <input type="submit" name="dbNext" id="next" value="Next">
+          <!-- <button type="button" type="submit" id="next" name="upNext">Next</button> -->
         </form>
         <form class="setupForm" action="/setupType" method="post">
           <div><label for="">Site 2 Site?</label> <label class="sslabel" id='click' for="site2site">.</label></div>
           <div><label for="">For Sale?</label>  <label class="sslabel" id='click' for="sales">.</label> </div>
-          <button type="button" type="submit" id="next" name="tpNext">Next</button>
+          <input type="submit" name="dbNext" id="next" value="Next">
+          <!-- <button type="button" type="submit" id="next" name="tpNext">Next</button> -->
           <div class="hiddenRadio">
-            <input type="checkbox" id="site2site">
-            <input type="checkbox" id="sales">
+            <input name="s2s" type="checkbox" id="site2site">
+            <input name="sls" type="checkbox" id="sales">
           </div>
         </form>
-        <form class="setupForm" action="setupName" method="post">
-          <div><label>YouNameIt:</label>  <input id="name" type="text" maxlength = "20"></div>
-          <div><label>Logo Upload:</label>  <input type="text"></div>
-          <button type="button" type="submit" id="submit" name="setup">Submit</button>
+        <form class="setupForm" action="/setupBrand" method="post">
+          <div><label>YouNameIt:</label>  <input id="name" name="name" type="text" maxlength = "20"></div>
+          <div><label>Logo Upload:</label>  <input name="logo" type="text"></div>
+          <input type="submit" name="dbNext" id="next" value="submit">
+          <!-- <button type="button" type="submit" id="submit" name="setup">Submit</button> -->
         </form>
       </div>
       <div class="encoded">
